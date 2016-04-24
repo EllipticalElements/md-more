@@ -1,6 +1,6 @@
 {
   "name": "md-more",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [
     "S. Francis"
   ],
@@ -44,7 +44,7 @@
     "polymer": "Polymer/polymer#^1.0.0",
     "elliptical-polymer-behaviors": "~1.1.0",
     "md-dropdown":"~1.0.0",
-    "neon-animation": "PolymerElements/neon-animation#~1.0.9"
+    "neon-animation": "PolymerElements/neon-animation#~1.2.2"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
