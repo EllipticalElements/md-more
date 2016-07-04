@@ -18,18 +18,34 @@
     </style>
     <template>
         <div md-dropdown>
-             <span class="icon-more-vert more-icon"></span>
-             <md-dropdown>
-                 <content></content>
-             </md-dropdown>    
-        </div>    
+            <span class="icon-more-vert more-icon" id="moreIcon"></span>
+            <md-dropdown>
+                <content></content>
+            </md-dropdown>
+        </div>
     </template>
 </dom-module>
 <script>
 
     Polymer({
 
-        is: 'md-more'
+        is: 'md-more',
+        properties:{
+            iconColor:{
+                type:String,
+                value:null
+            }
+        },
+
+        ready:function(){
+            if(this.iconColor) this.setIconColor(this.iconColor);
+        },
+
+        setIconColor:function(color){
+            this.$.moreIcon.style.color=color;
+        }
+
+
     });
 
 </script>
