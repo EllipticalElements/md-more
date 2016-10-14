@@ -1,6 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../md-dropdown/md-dropdown.html">
-
+<link rel="import" href="../iron-icons/iron-icons.html">
 
 <dom-module id="md-more">
     <style>
@@ -8,8 +8,7 @@
             position:relative;
             display:block;
         }
-        :host span.more-icon{
-            font-size:24px;
+        :host iron-icon{
             color:#666;
         }
         :host md-dropdown{
@@ -18,7 +17,7 @@
     </style>
     <template>
         <div md-dropdown>
-            <span class="icon-more-vert more-icon" id="moreIcon"></span>
+            <iron-icon icon="more-vert" id="moreIcon"></iron-icon>
             <md-dropdown>
                 <content></content>
             </md-dropdown>
@@ -44,8 +43,6 @@
         setIconColor:function(color){
             this.$.moreIcon.style.color=color;
         }
-
-
     });
 
 </script>
