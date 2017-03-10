@@ -16,8 +16,8 @@
         }
     </style>
     <template>
-        <div md-dropdown>
-            <iron-icon icon="more-vert" id="moreIcon"></iron-icon>
+        <div>
+            <iron-icon icon="more-vert" id="moreIcon" target="md-dropdown"></iron-icon>
             <md-dropdown id="dropdown">
                 <content></content>
             </md-dropdown>
@@ -45,7 +45,7 @@
         },
 
         _setVisibility:function(){
-            this.style.visibility='visible';;
+            this.style.visibility='visible';
         },
 
         setIconColor:function(color){
